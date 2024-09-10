@@ -40,9 +40,9 @@ class Functions:
         lo desplaza a la vista,lo limpia y envía un texto al campo del elemento.
 
         Args:
-            locator_type (string): Tipo de localizador (xpath o id)
-            locator (string):  El localizador del elemento
-            text (string): Texto a enviar al campo del elemento.
+            locator_type (str): Tipo de localizador (xpath o id)
+            locator (str):  El localizador del elemento
+            text (str): Texto a enviar al campo del elemento.
             t (int): Tiempo en segundos para esperar después de interactuar con 
             el elemento.
         """
@@ -69,13 +69,13 @@ class Functions:
 
     def validate_and_send_keys(self, locator_type:str, locator:str, 
                                           text:str, t:int):
-        """ Valida la presencia de un elemento en la página usando un selector, 
-        lo desplaza a la vista,lo limpia y envía un texto al campo del elemento.
+        """ Valida la presencia de un elemento en la página usando un localizador
+          y envía un texto al campo del elemento.
 
         Args:
-            locator_type (string): Tipo de localizador (xpath o css)
-            locator (string):  El localizador del elemento
-            text (string): Texto a enviar al campo del elemento.
+            locator_type (str): Tipo de localizador (xpath o id)
+            locator (str):  El localizador del elemento
+            text (str): Texto a enviar al campo del elemento.
             t (int): Tiempo en segundos para esperar después de interactuar con 
             el elemento.
         """
@@ -95,9 +95,9 @@ class Functions:
             el elemento a la vista.
 
         Args:
-            locator_type (string): Tipo de localizador (xpath o css)
-            locator (string): El localizador del elemento.
-            t (int): Tiempo en segundos para esperar después de hacer clic en 
+            locator_type (str): Tipo de localizador (xpath o id)
+            locator (str): El localizador del elemento.
+            t (int): Tiempo en segundos para esperar después de hacer click en 
             el elemento.
         """
         try:
@@ -116,15 +116,8 @@ class Functions:
 
         Args:
             path (str): ruta donde se guardará la captura
-            sc_name (str): nombre de la captura con extensión .png
+            file_name (str): nombre de la captura con extensión .png
         """
         if not os.path.exists(path):
             os.makedirs(path)
         self.driver.save_screenshot(os.path.join(path, file_name))
-
-    def tearDown(self, t: int):
-        """Realiza acciones de limpieza después de la ejecución de los tests.
-           Espera un tiempo especificado antes de cerrar el navegador.
-        """
-        self.wait(t)
-        self.driver.close()
