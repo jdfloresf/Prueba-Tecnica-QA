@@ -1,4 +1,4 @@
-# Prueba técnica para puesto de QA Jr
+# Prueba técnica
 
 Este proyecto contiene un script automatizado en Python para realizar una prueba de inicio de 
 sesión en la página web [https://the-internet.herokuapp.com/login](https://the-internet.herokuapp.com/login). 
