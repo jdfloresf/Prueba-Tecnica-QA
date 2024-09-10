@@ -7,7 +7,7 @@ El script realiza el proceso de autenticación y toma capturas de pantalla en ca
 ## Estructura:
 - ```functions.py:```Contiene funciones auxiliares como la captura de pantalla y la configuración del navegador.
 - ```locators.py:``` Define los localizadores de los elementos de la página de inicio de sesión.
-- ```requirements.txt:``` Lista de dependencias necesarias para ejecutar los tests.
+- ```requirements.txt:``` Lista de dependencias de python.
 - ```test_login.py:``` Script principal que realiza la prueba de login y toma capturas de pantalla.
 
 ## Pre-requisitos
