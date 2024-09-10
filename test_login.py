@@ -1,3 +1,14 @@
+"""
+Requisitos
+Escribe un scripts que haga lo siguiente dentro del sitio web:
+ https://the-internet.herokuapp.com/login.
+    • Abra el navegador y navegue a la página de inicio de sesión.  
+    • Ingrese un nombre de usuario y una contraseña.
+    • Haga clic en el botón “submit”.
+    • Verifique que se muestra la página de bienvenida con el mensaje correcto.
+    • Por cada paso debe de tomar captura de pantalla y almacenarse en una carpeta dentro del proyecto.
+"""
+
 import pytest
 import time
 
