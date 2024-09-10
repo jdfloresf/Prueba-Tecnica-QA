@@ -28,6 +28,6 @@ El script realiza el proceso de autenticación y toma capturas de pantalla en ca
 
 ## Ejecución del Test
 Para ejecutar el test, asegúrate de estar en el directorio raíz del proyecto y usa el siguiente comando:
-```pytest test_login.py -v -s``
+- ```pytest test_login.py -v -s```
 - La opción -v permite ver más detalles sobre qué pruebas pasaron o fallaron:
 - La opción -s permite ver la salida de las funciones de prueba, como los print() y otros mensajes de depuración que normalmente son capturados por pytest.
