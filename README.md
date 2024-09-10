@@ -1,6 +1,6 @@
 # Prueba técnica
 
-Este proyecto contiene un script automatizado en Python para realizar una prueba de inicio de 
+Este proyecto contiene un script en Python para realizar una prueba de inicio de 
 sesión en la página web [https://the-internet.herokuapp.com/login](https://the-internet.herokuapp.com/login). 
 El script realiza el proceso de autenticación y toma capturas de pantalla en cada paso.
 
