@@ -20,7 +20,6 @@ El script realiza el proceso de autenticación y toma capturas de pantalla en ca
 ### 2. Activar Entorno Virtual 
 - ```source venv/bin/activate  # Linux/Mac```
 - ```venv\Scripts\activate     # Windows```
-
 ## Clonar repositorio:
 - ```git clone https://github.com/jdfloresf/Prueba-Tecnica-QA.git```
 
